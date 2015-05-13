@@ -11,12 +11,12 @@ html {
     
     /*background-color: rgb(16,79,111);*/
     color:rgb(231,247,254);
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-  background-size: cover;
-  
+  	/*-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;*/
+  	background-size: cover;
 }
+
 body {
     color:rgb(140,173,211); /*lighter blue*/
     background-color: rgb(34,38,72);
@@ -200,6 +200,25 @@ table {
 	padding-top:20px;
 	font-size: 18px;
     opacity: 1.0;
+}
+
+#results{
+
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+#results th{
+	text-align: left;
+}
+
+#results th, td{
+	padding:10px;
+	border: 1px solid rgb(140,173,211);
+}
+
+#results caption{
+	font-weight:800;
 }
 
 #content a:link{
