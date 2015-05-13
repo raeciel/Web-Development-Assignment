@@ -59,12 +59,12 @@ header{
 #content {
 	min-height:500px;
 	position: relative;
-	padding-bottom:120px;
+	padding-bottom:150px;
 	width: 900px;
 }
 
 #content p {
-	font-size: 20px;
+	/*font-size: 18px;*/
 	margin-top:1.5em;
     /*margin-left: 60px;
     margin-right: 150px;*/
@@ -80,12 +80,12 @@ header{
 
 #welcome p{
     font-weight: 700;
-    font-size: 28px;
+    font-size: 26px;
 	padding-bottom:20px;
 }
 
 #announcement{
-	padding-top:26px;
+	padding-top:24px;
 }
 
 #announcement p{
@@ -104,50 +104,16 @@ h2{
 	width: 400px;
 	/*height: 40px;*/
 	text-align: center;
+
 	
   
 }
-
-table {
-	margin-top: 0em;
-	margin-bottom: 0em;
-	margin-left: 70px;
-	padding-top:20px;
-	font-size: 20px;
-    opacity: 1.0;
-
-}
-
-/*
-
-#content ul li{
-	margin-left: 100px;
-    margin-right: 100px;
-  
-}
-*/
-
-#content a:link{
+h3{
+	font-size:20px;
+	color:inherit;
+	background-color:inherit;
 	
-    color:white;
-	background-color:inherit;
-	text-decoration: underline;
-
 }
-#content a:visited{
-	color:rgb(136,136,136); 
-	background-color:inherit;
-	text-decoration: underline;
-	}
-
-#content a:hover {
-    color:rgb(140,173,211);
-    background-color: inherit;
-    text-decoration:none;
-}
-
-
-
 
 img.center{
 	margin-top:40px;
@@ -157,7 +123,63 @@ img.center{
 	margin-right: auto;
 	/*border: 1px solid rgb(16,79,111);*/
 }
+img.equipment{
+	float:left;
+	padding-right:20px;
+	margin-left: 30px;
+	
+}
 
+#togs{
+	padding-top:20px;
+
+}
+#mask{
+	padding-top:5px;
+}
+#snorkel{
+	padding-top:10px;
+}
+.credits {
+	margin:0;
+	padding:0;
+	margin-top:0em;
+	text-align:left;
+
+	font-size:12px;
+	
+}
+.clear{
+	clear:left;
+	padding-top:20px;
+}
+	
+table {
+	margin-top: 0em;
+	margin-bottom: 0em;
+	margin-left: 70px;
+	padding-top:20px;
+	font-size: 18px;
+    opacity: 1.0;
+}
+
+#content a:link{
+    color:white;
+	background-color:inherit;
+	text-decoration: underline;
+}
+
+#content a:visited{
+	color:rgb(136,136,136); 
+	background-color:inherit;
+	text-decoration: underline;
+}
+
+#content a:hover {
+    color:rgb(140,173,211);
+    background-color: inherit;
+    text-decoration:none;
+}
 
 nav ul {
   
@@ -188,8 +210,6 @@ nav .noBorder{
     /*width:165.5px;*/
 	min-width: 165.5px;
 }
-
-
 
 
 nav a:link {
