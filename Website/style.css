@@ -78,22 +78,16 @@ header{
 	
 }
 
-#welcome p{
+p#welcome{
     font-weight: 700;
     font-size: 26px;
 	padding-bottom:20px;
 }
 
-#announcement{
-	padding-top:24px;
-}
-
-#announcement p{
-
-	margin-top: 0em;
-	margin-bottom: 0em;
+p#announcement{
 	font-weight: 700;
 	font-size:22px;
+	line-height: 30px;
 }
 h2{
 	background-color:rgb(140,173,211); 
@@ -202,23 +196,46 @@ table {
     opacity: 1.0;
 }
 
+table th, td{
+	padding:10px;
+}
+
+table,th,td{
+	border: 1px solid rgb(140,173,211);
+	border-collapse: collapse;
+
+}
+
 #results{
 
 	margin-left:auto; 
     margin-right:auto;
+ 	/*border: 1px solid rgb(140,173,211);
+	border-collapse: collapse;  */
+
 }
 
 #results th{
+	padding:10px;
 	text-align: left;
+	/*border: 1px solid rgb(140,173,211);
+	border-collapse: collapse;  */
 }
 
-#results th, td{
+#results, #results th, #results td{
+		border: 1px solid rgb(140,173,211);
+	border-collapse: collapse;  
+}
+#results td{
 	padding:10px;
-	border: 1px solid rgb(140,173,211);
+	/*border: 1px solid rgb(140,173,211);
+	border-collapse: collapse;  */
+
 }
 
 #results caption{
 	font-weight:800;
+	padding-top: 20px;
 }
 
 #content a:link{
