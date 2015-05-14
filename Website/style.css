@@ -81,6 +81,7 @@ h1 {
 }
 
 p#welcome{
+	margin-left: 190px;
     font-weight: 700;
     font-size: 26px;
 	padding-bottom:20px;
@@ -111,22 +112,26 @@ h3{
 	
 }
 #jsImages{
-	margin-left:50px;
-	width:1000px;
+	position:relative;
+	left: 30%;
+
+	width:950px;
 
 }
 #leftArrow{
-	margin-bottom: 110px;
-	opacity:0.8;
+
+	padding-right:10px;
+	padding-bottom:60px;
 }
 #rightArrow{
-	margin-bottom: 110px;
-	opacity:0.8;
+
+	padding-left:10px;
+	padding-bottom:60px;
 }
 img.center{
 	margin-top:40px;
 	display:block;
-
+	margin-left: 30px;
 	/*
 	margin-right: auto;
 	/*border: 1px solid rgb(16,79,111);*/
