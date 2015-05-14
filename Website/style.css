@@ -1,4 +1,4 @@
-/*Style sheet for all the pages in this project - COMP112 Project Raeciel Reyes 14/05/15*/
+/*Style sheet for all the html pages in this project folder - COMP112 Project rreyes style.css 14/05/15*/
 
 /*** Main & general design template for the pages ***/
 html,body {
@@ -10,10 +10,8 @@ html,body {
 
 }
 
-/*After blurring the background in photoshop, I uploaded the
-background photo on my imageshack account so the project's size remains small*/
 html {
-    background: url(http://imageshack.com/a/img903/4899/teM8Ba.jpg) no-repeat center center fixed;
+    background: url(./images/bg.jpg) no-repeat center center fixed;
   	background-size: cover;
 }
 
@@ -75,7 +73,8 @@ hr{
 }
 
 #content {
-	min-height:500px;
+	min-height:800px;
+	max-height:100%;
 	position: relative;
 	padding-bottom:100px;
 	width: 900px;
@@ -112,6 +111,7 @@ hr{
     text-decoration:none;
 }
 
+/* navigation's modification */
 nav ul {
   
 	list-style: none;
@@ -123,10 +123,10 @@ nav ul {
 }
     
 nav li {
-  font-size: 1.2em;
-  line-height: 66px;
-  height: 65px;
-  display: inline-block;
+	font-size: 1.2em;
+	line-height: 66px;
+	height: 65px;
+	display: inline-block;
 }
     
 /*specific size of the navigation's list*/
@@ -170,6 +170,7 @@ nav a:hover {
   background-color: rgb(34,38,72);
 }
 
+/* footer's modifications */
 footer {
 	background-color:rgb(140,173,211);
 	color:rgb(34,38,72);
@@ -186,9 +187,10 @@ footer p{
 	padding-top:15px;
 }
 
+/* back to top link */
 footer .top{
 	background-color:inherit;
-	color:white;
+	color:rgb(34,38,72);
 	text-decoration: underline;
 
 }
@@ -200,13 +202,14 @@ footer .top:hover {
 
 /*** the following modifies index.html ***/
 p#welcome{
-	margin-left: 190px;
+	margin-left: 200px;
     font-weight: 700;
     font-size: 26px;
 	padding-bottom:20px;
 }
 
 p#announcement{
+	text-align:center;
 	font-weight: 700;
 	font-size:22px;
 	line-height: 30px;
@@ -214,20 +217,41 @@ p#announcement{
 /*images that changes using javaScript*/
 #jsImages{
 	position:relative;
-	left: 30%;
+	left: 25%;
 	width:950px;
 }
 /*left arrow image*/
 #leftArrow{
 
-	padding-right:10px;
+	padding-right:30px;
 	padding-bottom:60px;
 }
 /*right arrow image*/
 #rightArrow{
-	padding-left:10px;
+	padding-left:30px;
 	padding-bottom:60px;
 }
+
+/* schedule and venue table */	
+table {
+	margin-left: 220px;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-top:20px;
+	font-size: 18px;
+    opacity: 1.0;
+}
+
+table th, td{
+	padding:10px;
+}
+
+table,th,td{
+	border: 1px solid rgb(140,173,211);
+	border-collapse: collapse;
+
+}
+
 
 /*** modifies the image in theGame.html***/
 img.center{
@@ -250,6 +274,8 @@ img.center{
 }
 
 /*** the following modifies equipment.html ***/
+
+/* floats the photos to the left */
 img.equipment{
 	float:left;
 	padding-right:20px;
@@ -257,6 +283,7 @@ img.equipment{
 	
 }
 
+/* the following div id's corresponds to the equipment's descriptions*/
 #togs{
 	padding-top:20px;
 }
@@ -283,7 +310,7 @@ img.equipment{
 	background-color:inherit;
 }
 
-#glove p{
+#glove h3, #glove p{
 	margin-left:0px;
 }
 
@@ -310,28 +337,12 @@ p#note{
 	clear:both;
 	padding-top:20px;
 }
-	
-table {
-	margin-top: 0em;
-	margin-bottom: 0em;
-	margin-left: 70px;
-	padding-top:20px;
-	font-size: 18px;
-    opacity: 1.0;
-}
 
-table th, td{
-	padding:10px;
-}
-
-table,th,td{
-	border: 1px solid rgb(140,173,211);
-	border-collapse: collapse;
-
-}
 /*** the following modifies the table in results.html ***/
-#results{
 
+/* result.html's table */
+#results{
+	padding:20px;
 	margin-left:260px; 
 }
 
@@ -436,7 +447,7 @@ legend{
 	
 }
 
-/* *** */
+/* textInputs fieldsets */
 .textInputs label{
   	float: left;
   	width: 150px;
@@ -454,7 +465,7 @@ legend{
     margin-bottom:5px;
 }
 
-/* *** */
+/* listitem fieldsets */
 .listitem li{
     float:left;
     width:33%;
@@ -476,6 +487,7 @@ legend{
 /* modifies the paragraph in followup.html */
 #followUp p{
 	line-height:2px;
+	text-align: center;
 }
 
 
