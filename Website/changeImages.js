@@ -2,7 +2,7 @@
 
 if (document.getElementById){    window.onload = setup;}
 
-var images = new Array("./images/images-2.jpg","./images/images-3.jpg","./images/images-4.jpg");
+var images = new Array("./images/togs.jpg","./images/images-2.jpg","./images/images.jpg","./images/images-4.jpg");
 var index = 0;
 
 function goRight(){

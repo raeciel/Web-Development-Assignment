@@ -106,11 +106,27 @@ h2{
   
 }
 h3{
+	margin-left:70px;
 	font-size:20px;
 	color:inherit;
 	background-color:inherit;
 	
 }
+
+hr{
+	width:1000px;
+	color: rgb(34,38,72);
+	margin-top:30px;
+}
+
+#newsContent hr{
+	margin-left: 0px;
+	width:800px;
+	color: rgb(34,38,72);
+	margin-top:30px;
+}
+
+/* index.html */
 #jsImages{
 	position:relative;
 	left: 30%;
@@ -137,6 +153,12 @@ img.center{
 	/*border: 1px solid rgb(16,79,111);*/
 }
 
+/*news.html*/
+#newsContent p{
+	max-width:600px;
+}
+
+/*theGame.html*/
 img.equipment{
 	float:left;
 	padding-right:20px;
@@ -386,8 +408,12 @@ footer .top:hover {
 	
 }
 
-hr{
-	width:1000px;
+#contactsContent h3{
+	margin-left:0;
+	font-size:20px;
+	color:inherit;
+	background-color:rgb(140,173,211);
+	
 }
 
 /*Form*/
