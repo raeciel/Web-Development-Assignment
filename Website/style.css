@@ -65,6 +65,7 @@ h3{
 hr{
 	width:1000px;
 	color: rgb(34,38,72);
+	background-color:inherit;
 	margin-top:30px;
 }
 
@@ -240,6 +241,7 @@ img.center{
 	margin-left: 0px;
 	width:800px;
 	color: rgb(34,38,72);
+	background-color:inherit;
 	margin-top:30px;
 }
 
