@@ -176,14 +176,6 @@ img.equipment{
 	font-size:12px;
 }
 
-
-.credits {
-	margin:0;
-	padding:0;
-	text-align:left;
-	font-size:12px;
-	
-}
 .clear{
 	clear:both;
 	padding-top:20px;
@@ -377,6 +369,9 @@ footer .top:hover {
 	
 }
 
+hr{
+	width:1000px;
+}
 
 /*Form*/
 #contact{
