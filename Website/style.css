@@ -492,11 +492,7 @@ legend{
 
 .button{
   	text-align: center;
-  
-
 }
-
-
 
 #foot{
     clear:both;
@@ -506,3 +502,10 @@ legend{
 	min-width:430px;
 	max-width:430px;
 }
+
+/* followup.html */
+#followUp p{
+	line-height:2px;
+}
+
+
