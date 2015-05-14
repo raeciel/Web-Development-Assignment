@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>About the Game</title>
 		<meta charset=utf-8>
@@ -37,10 +37,7 @@
 				</p>
 				<h2>How is it played?</h2>
 				<p>
-					
 					Click this link for information about the <a href="http://www.cmas.org/hockey/j">rules of Underwater Hockey</a>.
-
-					
 				</p>
 				<p>
 					UWH is played by two teams of six (with up to four subs per team) in (ideally) a 25m x 15m pool with a constant depth of between 2m and 3.5m. Teams may be and often are, mixed gender. A 3.5m wide goal or gully is placed on the bottom at either end of the playing area. Games are typically 30 minutes long with a short break between halves. Players are equipped with a mask and snorkel, fins, a water-polo style hat (to protect your ears) and an underwater hockey stick and a padded glove (to protect your delicate fingers).
@@ -58,9 +55,13 @@
 				</p>
 			
 			
-                <script>
-document.write("Author: Raeciel Reyes. This page was last modified on: " + document.lastModified +"");
-</script>
+				<script>
+				update = new Date(document.lastModified)
+				theMonth = update.getMonth() + 1
+				theDate = update.getDate()
+				theYear = update.getFullYear()
+				document.writeln("Author: Raeciel Reyes. This page was last modified on: " + theDate + "/" + theMonth + "/" + theYear)
+				</script>
 			</footer>
 		</div>
 	</body>

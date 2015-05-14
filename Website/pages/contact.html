@@ -1,67 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Home</title>
+		<title>Contact Us</title>
 		<meta charset=utf-8>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 	</head>
 	<body>
-		<a id="top"></a>
-		<header>
-			<div id="h1">
-
-			<h1>Mosgiel<br>
-				Underwater Hockey Club</h1>
-			</div>
-
-		</header>
-			<div class ="nav">
+		<div id="wrapper">
+			<a id="top"></a>
+			<header>
+				<div id="h1">
+					<h1>Mosgiel<br>
+						Underwater Hockey Club</h1>
+				</div>
+			</header>
 			<nav>
 				<ul>
 					<li class="noBorder"><a href="../index.html">Home</a></li>
-					<li class="border"><a href="./pages/news.html">News</a></li>
-					<li class="border"><a>The Game</a></li>
-					<li class="border"><a href="./pages/evaluation.html">Equipment</a></li>
-					<li class="border"><a href="./pages/construction.html">Results</a></li>
-					<li class="noBorder"><a href="./pages/evaluation.html">Contact Us</a></li>
+					<li class="border"><a href="news.html">News</a></li>
+					<li class="border"><a href="theGame.html">The Game</a></li>
+					<li class="border"><a href="equipment.html">Equipment</a></li>
+					<li class="border"><a href="results.html">Results</a></li>
+					<li class="noBorder"><a>Contact Us</a></li>
 				</ul>
-			</nav>
-		</div>
-		<section id="content">
-			<p>
-				The World Wide Web is populated by millions of web pages. It is possible for almost anyone to create and upload a web page in next to no time at all. But, as in all things, there is a world of difference between an ill-conceived amateur product and that created with professionalism, quality and usability in mind.
-			</p>
-			<p>
-				There is so much more to a good web site than code quality. It must be easy to use and appealing in order to maintain an audience. Poor quality code makes a site difficult to maintain and prone to exhibit problems as newer browsers are released. Poor interface makes a site unappealing to its audience. True quality is achieved when sensible standards-based code is combined with an effective structure and design.
-			</p>
-			<p>
-				This guide endeavours to direct you through a process that will help you to produce quality results. There are three basic processes involved:
-			</p>
-			<section id="processes">
-				<h2>Planning</h2>
+			</nav> <!-- navigation -->
+			<div id="contactsContent">
+				<h2>Contact Us</h2>
+				<p>If you wish to join or place an inquiry, please fill up the form below.
 				<p>
-					In all projects the planning phase is key. Without a well-considered plan the creation of your site will be fraught with difficulties and frustration and your end product risks being confused and inconsistent. Many questions must be asked and answered to establish the specific needs of each site you create.
-				</p>
-				<h2>Construction</h2>
+				<form method="post" enctype="application/x-www-form-urlencoded" action="http://web112.otago.ac.nz/112bin/112formslab.cgi">
+					<div>
+						<input type="hidden" name="recipient" value="reyra588@student.otago.ac.nz">
+						<input type="hidden" name="subject" value="comp112 email">
+						<input type="hidden" name="followup-page" value="http://www.cs.otago.ac.nz/comp112/followup.html">
+					</div>
+					<h3 id="contact">Sign Up Form</h3>
+					<fieldset class="textInputs">
+						<legend>Contact Details</legend>
+						<ul>
+							<li>
+								<label for="firstname">First name:</label>
+								<input type="text" placeholder="Please enter your first name" name="First name" id="firstname" required pattern="[a-zA-Z '-]+">
+							</li>
+							<li>
+								<label for="surname">Surname:</label>
+								<input type="text" placeholder="Please enter your last name" name="Surname" id="surname" required pattern="[a-zA-Z '-]+">
+							</li>
+							<li>
+								<label for="bday">Date of Birth:</label>
+								<input type="date" placeholder="Please enter your date of birth MM/DD/YYYY" name="Date of Birth" id="bday" required >
+							</li>
+							<li>
+								<label for="sender">Email address:</label>
+								<input type="email" placeholder="Please enter your email address" name="sender" id="sender" required>
+							</li>
+							<li>
+								<label for="phone">Phone number:</label>
+								<input type="tel" placeholder="Please enter your phone number" name="Phone Number" id="phone" required pattern="[0-9 ()-]+">
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="listitem">
+						<legend>Contact Preference</legend>
+						<ul>
+							<li>
+								<label><input type="radio" name="Contact Preference" value="email" required> Email</label>
+							</li>
+							<li>
+								<label><input type="radio" name="Contact Preference" value="phone" required> Phone</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="listitem">
+						<legend>Skill level</legend>
+						<ul>
+							<li>
+								<label><input type="radio" name="Skill Level" value="beginner" required>Beginner</label>
+							</li>
+							<li>
+								<label><input type="radio" name="Skill Level" value="intermediate" required>Intermediate</label>
+							</li>
+							<li>
+								<label><input type="radio" name="Skill Level" value="advanced" required>Advanced</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Comments or Questions</legend>
+						<label>
+							<textarea cols="40" rows="4" name="comments" id="comments">Add your comments or questions here</textarea>
+						</label>
+					</fieldset>
+					<fieldset class="button">
+						<legend class="hidden">Buttons</legend>
+						<input type="reset" name="reset">
+						<input type="submit" value="Submit">
+					</fieldset>
+				</form>
+				<hr>
+				<p>You can also contact us at:
 				<p>
-					Though it is tempting to leap in and construct your whole site in one go, it is more sensible to construct a single template page first. Once that page has been through the evaluation phase of the process you can return to construction and create the rest of your site, content in the knowledge that your foundation code is sound.
-				</p>
-				<h2>Evaluation</h2>
+				<p class="moreContact">enquiries@mosgielhockey.co.nz
 				<p>
-					Evaluation is a phase that you will repeat during the course of a project. Begin evaluation after you have created and validated. This phase will make sure that your site is usable and sensible. When your site is complete, evaluate it again to ensure that it works as a unit.
+				<p class="moreContact">123 Gordon Road</p>
+				<p class="moreContact">Mosgiel</p>
+			</div> <!-- contactsContent -->
+			<footer>
+				<p><a href="#top" class="top">Back to Top</a></p>
+				<p>This website was created for a University project. The content is largely fictional and no services are actually being offered.
 				</p>
-			</section>
-			<p>
-				Your movement through these three phases is not strictly sequential. Planning is always your first port of call, but construction and evaluation are phases that you will alternate between during the course of a project.
-			</p>
-
-		</section>
-		
-		<footer>
-			<p><a href="#top" class="top">Back to Top</a></p>
-                <script>
-document.write("Author: Raeciel Reyes. This page was last modified on: " + document.lastModified +"");
-</script>
-		</footer>
+							<script>
+				update = new Date(document.lastModified)
+				theMonth = update.getMonth() + 1
+				theDate = update.getDate()
+				theYear = update.getFullYear()
+				document.writeln("Author: Raeciel Reyes. This page was last modified on: " + theDate + "/" + theMonth + "/" + theYear)
+				</script>
+			</footer>
+		</div> <!-- wrapper -->
 	</body>
 </html>

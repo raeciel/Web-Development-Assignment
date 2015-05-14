@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Home</title>
 		<meta charset=utf-8>
@@ -93,10 +93,13 @@
 				<p>This website was created for a University project. The content is largely fictional and no services are actually being offered.
 				</p>
 
-			
-                <script>
-document.write("Author: Raeciel Reyes. This page was last modified on: " + document.lastModified +"");
-</script>
+							<script>
+				update = new Date(document.lastModified)
+				theMonth = update.getMonth() + 1
+				theDate = update.getDate()
+				theYear = update.getFullYear()
+				document.writeln("Author: Raeciel Reyes. This page was last modified on: " + theDate + "/" + theMonth + "/" + theYear)
+				</script>
 			</footer>
 		</div>
 	</body>

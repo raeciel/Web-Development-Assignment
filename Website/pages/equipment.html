@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Equipment</title>
 		<meta charset=utf-8>
@@ -72,7 +72,7 @@
 				</div>
 				<div class="clear">
 					<figure>
-						<img src="../images/images-1.jpg" alt="person wearing an underwater hockey hat" width="250" height="200" class="equipment">
+						<img src="../images/images-1.jpg" alt="underwater hockey glove" width="250" height="200" class="equipment">
 					</figure>
 				</div>
 				<div id="glove">
@@ -116,21 +116,24 @@
 					</p>
 				</div>
 				<div class="clear">
-				<section id="note">
-				<p>*The things you wear on your feet are called fins, not flippers. 'Flipper' was a dolphin.</p>
-				</section>
+					<section id="note">
+						<p>*The things you wear on your feet are called fins, not flippers. 'Flipper' was a dolphin.</p>
+					</section>
 				</div>
 			</div>
-			
 			<footer>
 				<p><a href="#top" class="top">Back to Top</a></p>
 				<p>This website was created for a University project. The content is largely fictional and no services are actually being offered.
 				</p>
 			
 			
-                <script>
-document.write("Author: Raeciel Reyes. This page was last modified on: " + document.lastModified +"");
-</script>
+			<script>
+				update = new Date(document.lastModified)
+				theMonth = update.getMonth() + 1
+				theDate = update.getDate()
+				theYear = update.getFullYear()
+				document.writeln("Author: Raeciel Reyes. This page was last modified on: " + theDate + "/" + theMonth + "/" + theYear)
+				</script>
 			</footer>
 		</div>
 	</body>
