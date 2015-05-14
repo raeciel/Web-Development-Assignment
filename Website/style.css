@@ -110,12 +110,23 @@ h3{
 	background-color:inherit;
 	
 }
+#jsImages{
+	margin-left:50px;
+	width:1000px;
 
-#picture{
+}
+#leftArrow{
+	margin-bottom: 110px;
+	opacity:0.8;
+}
+#rightArrow{
+	margin-bottom: 110px;
+	opacity:0.8;
+}
+img.center{
 	margin-top:40px;
 	display:block;
-	margin-left: auto;
-	margin-right: auto;
+
 	/*
 	margin-right: auto;
 	/*border: 1px solid rgb(16,79,111);*/
