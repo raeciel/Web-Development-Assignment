@@ -1,37 +1,31 @@
-/*css template*/
+/*Style sheet for all the pages in this project - COMP112 Project Raeciel Reyes 14/05/15*/
+
+/*** Main & general design template for the pages ***/
 html,body {
 	max-height:100%;
 	min-height:100%;
 	padding:0;
+	color:rgb(140,173,211); /*lighter blue*/
+    background-color: rgb(34,38,72); /*darker blue*/
 
 }
 
+/*After blurring the background in photoshop, I uploaded the
+background photo on my imageshack account so the project's size remains small*/
 html {
     background: url(http://imageshack.com/a/img903/4899/teM8Ba.jpg) no-repeat center center fixed;
-    
-    /*background-color: rgb(16,79,111);*/
-    color:rgb(231,247,254);
-	background-color: inherit;
-  	/*-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;*/
   	background-size: cover;
 }
 
-body {
-    color:rgb(140,173,211); /*lighter blue*/
-    background-color: rgb(34,38,72);
-	
-    font-family: "Myriad Pro Cond", sans-serif;
+body {	
+    font-family: "Myriad Pro", sans-serif;
     max-width: 1000px;
     min-width: 1000px;
     margin:0 auto;
-    opacity: 0.9;
-    
+    opacity: 0.9;   
 }
 
 header{
-
     position:relative;
     background-image: url("./images/twoPlayers2.jpg");
     background-size: cover;
@@ -50,7 +44,28 @@ h1 {
 	top: 30px; 
 	right:20px;
 	text-align: right;
+}
 
+h2{
+	background-color:rgb(140,173,211); 
+	color:rgb(34,38,72);
+	border-radius: 0px;
+	padding: 20px 0px 20px 0px;
+	width: 400px;
+	text-align: center;
+}
+
+h3{
+	margin-left:70px;
+	font-size:20px;
+	color:inherit;
+	background-color:inherit;
+}
+
+hr{
+	width:1000px;
+	color: rgb(34,38,72);
+	margin-top:30px;
 }
 
 #wrapper {
@@ -66,10 +81,7 @@ h1 {
 }
 
 #content p {
-	/*font-size: 18px;*/
 	margin-top:1.5em;
-    /*margin-left: 60px;
-    margin-right: 150px;*/
     opacity: 1.0;
 	width: 860px;
 	margin-left: 70px;
@@ -80,6 +92,112 @@ h1 {
 	
 }
 
+/* link's behavior inside the content div */
+#content a:link{
+    color:white;
+	background-color:inherit;
+	text-decoration: underline;
+}
+
+#content a:visited{
+	color:rgb(136,136,136); 
+	background-color:inherit;
+	text-decoration: underline;
+}
+
+#content a:hover {
+    color:rgb(140,173,211);
+    background-color: inherit;
+    text-decoration:none;
+}
+
+nav ul {
+  
+	list-style: none;
+	color:inherit;
+	background-color: rgb(34,38,72);
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+    
+nav li {
+  font-size: 1.2em;
+  line-height: 66px;
+  height: 65px;
+  display: inline-block;
+}
+    
+/*specific size of the navigation's list*/
+nav .border{
+	min-width: 161.5px;
+}
+
+/*specific size of the navigation's list*/
+nav .noBorder{
+	min-width: 165.5px;
+}
+
+/* link */
+nav a:link {
+  text-decoration: none;
+  color: rgb(34,38,72);
+  background-color: rgb(140,173,211);
+  display: block;
+  transition: .3s background-color;
+}
+
+/* visited link */
+nav a:visited {
+  text-decoration: none;
+  color: rgb(34,38,72);
+  background-color: rgb(140,173,211);
+  display: block;
+  transition: .3s background-color;
+}
+
+/* active link */
+nav a:active {
+  color: rgb(140,173,211);
+  display: block;
+  background-color: rgb(34,38,100);
+}
+
+/* hover */
+nav a:hover {
+  color: rgb(140,173,211);
+  background-color: rgb(34,38,72);
+}
+
+footer {
+	background-color:rgb(140,173,211);
+	color:rgb(34,38,72);
+	text-align:center;
+	width:100%;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	font-size: 12px;
+}
+
+footer p{
+	margin:0;
+	padding-top:15px;
+}
+
+footer .top{
+	background-color:inherit;
+	color:white;
+	text-decoration: underline;
+
+}
+footer .top:hover {
+   	color:rgb(34,38,72);
+    background-color: inherit;
+    text-decoration:none;
+}
+
+/*** the following modifies index.html ***/
 p#welcome{
 	margin-left: 190px;
     font-weight: 700;
@@ -92,33 +210,32 @@ p#announcement{
 	font-size:22px;
 	line-height: 30px;
 }
-h2{
-	background-color:rgb(140,173,211); 
-	color:rgb(34,38,72);
-	border-radius: 0px;
-	padding: 20px 0px 20px 0px;
-
-	width: 400px;
-	/*height: 40px;*/
-	text-align: center;
-
-	
-  
+/*images that changes using javaScript*/
+#jsImages{
+	position:relative;
+	left: 30%;
+	width:950px;
 }
-h3{
-	margin-left:70px;
-	font-size:20px;
-	color:inherit;
-	background-color:inherit;
-	
+/*left arrow image*/
+#leftArrow{
+
+	padding-right:10px;
+	padding-bottom:60px;
+}
+/*right arrow image*/
+#rightArrow{
+	padding-left:10px;
+	padding-bottom:60px;
 }
 
-hr{
-	width:1000px;
-	color: rgb(34,38,72);
-	margin-top:30px;
+/*** modifies the image in theGame.html***/
+img.center{
+	margin-top:40px;
+	display:block;
+	margin-left: 30px;
 }
 
+/*** the following modifies news.html ***/
 #newsContent hr{
 	margin-left: 0px;
 	width:800px;
@@ -126,39 +243,11 @@ hr{
 	margin-top:30px;
 }
 
-/* index.html */
-#jsImages{
-	position:relative;
-	left: 30%;
-
-	width:950px;
-
-}
-#leftArrow{
-
-	padding-right:10px;
-	padding-bottom:60px;
-}
-#rightArrow{
-
-	padding-left:10px;
-	padding-bottom:60px;
-}
-img.center{
-	margin-top:40px;
-	display:block;
-	margin-left: 30px;
-	/*
-	margin-right: auto;
-	/*border: 1px solid rgb(16,79,111);*/
-}
-
-/*news.html*/
 #newsContent p{
 	max-width:600px;
 }
 
-/*theGame.html*/
+/*** the following modifies equipment.html ***/
 img.equipment{
 	float:left;
 	padding-right:20px;
@@ -168,7 +257,6 @@ img.equipment{
 
 #togs{
 	padding-top:20px;
-
 }
 
 #mask{
@@ -211,10 +299,11 @@ img.equipment{
 	padding-top:15px;
 }
 
-#note{
+p#note{
 	font-size:12px;
 }
 
+/* clears the float */
 .clear{
 	clear:both;
 	padding-top:20px;
@@ -238,32 +327,24 @@ table,th,td{
 	border-collapse: collapse;
 
 }
-
+/*** the following modifies the table in results.html ***/
 #results{
 
 	margin-left:260px; 
-
- 	/*border: 1px solid rgb(140,173,211);
-	border-collapse: collapse;  */
-
 }
 
 #results th{
 	padding:10px;
 	text-align: left;
-	/*border: 1px solid rgb(140,173,211);
-	border-collapse: collapse;  */
 }
 
 #results, #results th, #results td{
-		border: 1px solid rgb(140,173,211);
+	border: 1px solid rgb(140,173,211);
 	border-collapse: collapse;  
 }
+
 #results td{
 	padding:10px;
-	/*border: 1px solid rgb(140,173,211);
-	border-collapse: collapse;  */
-
 }
 
 #results caption{
@@ -271,121 +352,8 @@ table,th,td{
 	padding-top: 20px;
 }
 
-#content a:link{
-    color:white;
-	background-color:inherit;
-	text-decoration: underline;
-}
 
-#content a:visited{
-	color:rgb(136,136,136); 
-	background-color:inherit;
-	text-decoration: underline;
-}
-
-#content a:hover {
-    color:rgb(140,173,211);
-    background-color: inherit;
-    text-decoration:none;
-}
-
-nav ul {
-  
-	list-style: none;
-	color:inherit;
-	background-color: rgb(34,38,72);
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-    
-nav li {
-  font-size: 1.2em;
-  line-height: 66px;
-  height: 65px;
-  display: inline-block;
-  /*margin:0 auto;*/
-}
-    
-
-nav .border{
-    /*width: 163px;*/
-	min-width: 161.5px;
-    /*
-border-left: .1px solid rgb(34,38,72);
-  border-right: .1px solid rgb(34,38,72);*/
-}
-nav .noBorder{
-    /*width:165.5px;*/
-	min-width: 165.5px;
-}
-
-
-nav a:link {
-  text-decoration: none;
-  color: rgb(34,38,72);
-  background-color: rgb(140,173,211);
-  display: block;
-  transition: .3s background-color;
-}
-
-/* visited link */
-nav a:visited {
-  text-decoration: none;
-  color: rgb(34,38,72);
-  background-color: rgb(140,173,211);
-  display: block;
-  transition: .3s background-color;
-}
-
-nav a:active {
-  color: rgb(140,173,211);
-  display: block;
-  background-color: rgb(34,38,100);
-  /*cursor: default;*/
-}
-
- 
-nav a:hover {
-  color: rgb(140,173,211);
-  background-color: rgb(34,38,72);
-}
-
-footer {
-	background-color:rgb(140,173,211);
-	color:rgb(34,38,72);
-	text-align:center;
-	width:100%;
-	height:80px;
-	position:absolute;
-	bottom:0;
-	
-	font-size: 12px;
-
-}
-footer p{
-	margin:0;
-	padding-top:15px;
-}
-
-footer .top{
-	background-color:inherit;
-	color:white;
-	text-decoration: underline;
-
-}
-footer .top:hover {
-   	color:rgb(34,38,72);
-    background-color: inherit;
-    text-decoration:none;
-}
-/*Contacts.html exclusive modifications*/
-
-
-.moreContact{
-
-}
-
+/***the following modifies the content in contact.html***/
 #contactsContent {
 	min-height:500px;
 	position: relative;
@@ -441,6 +409,7 @@ form{
 .hidden {
 	display:none;
 }
+
 ul{
     list-style-type:none;
     margin:0;
@@ -448,7 +417,6 @@ ul{
 }
 
 fieldset{
-    /*background-color:rgb(79,84,125);*/
 	border: 1px solid rgb(34,38,72);
 	border-radius: 4px;
     color: inherit;
@@ -503,7 +471,7 @@ legend{
 	max-width:430px;
 }
 
-/* followup.html */
+/* modifies the paragraph in followup.html */
 #followUp p{
 	line-height:2px;
 }

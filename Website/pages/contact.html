@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- COMP112 Project Raeciel Reyes 14/05/15 -->
 		<title>Contact Us</title>
 		<meta charset=utf-8>
-		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../style.css"> <!-- links to style.css stylesheet-->
 	</head>
 	<body>
-		<div id="wrapper">
-			<a id="top"></a>
-			<header>
-				<div id="h1">
-					<h1>Mosgiel<br>
-						Underwater Hockey Club</h1>
-				</div>
-			</header>
-			<nav>
+		<div id="wrapper"> <!-- start of wrapper div -->
+			<a id="top"></a> <!-- 'back to top' links to this --> 
+			<header> <!-- start of header -->
+				<h1>Mosgiel<br>
+					Underwater Hockey Club</h1>
+			</header> <!-- end of header -->
+			<nav> <!-- start of navigation -->
 				<ul>
 					<li class="noBorder"><a href="../index.html">Home</a></li>
 					<li class="border"><a href="news.html">News</a></li>
@@ -23,19 +22,20 @@
 					<li class="border"><a href="results.html">Results</a></li>
 					<li class="noBorder"><a>Contact Us</a></li>
 				</ul>
-			</nav> <!-- navigation -->
-			<div id="contactsContent">
+			</nav> <!-- end of navigation -->
+			<div id="contactsContent"> <!-- start of contactsContent div -->
 				<h2>Contact Us</h2>
 				<p>If you wish to join or place an inquiry, please fill up the form below.
 				<p>
+				<!-- start of the form -->
 				<form method="post" enctype="application/x-www-form-urlencoded" action="http://web112.otago.ac.nz/112bin/112formslab.cgi">
-					<div>
+					<div> <!-- hidden properties div -->
 						<input type="hidden" name="recipient" value="reyra588@student.otago.ac.nz">
 						<input type="hidden" name="subject" value="comp112 email">
 						<input type="hidden" name="followup-page" value="http://www.csnet.otago.ac.nz/rreyes/tests/pages/followup.html">
-					</div>
+					</div> <!-- "end of hidden properties div" -->
 					<h3 id="contact">Sign Up Form</h3>
-					<fieldset class="textInputs">
+					<fieldset class="textInputs"> <!-- start text input contact details field -->
 						<legend>Contact Details</legend>
 						<ul>
 							<li>
@@ -48,7 +48,7 @@
 							</li>
 							<li>
 								<label for="bday">Date of Birth:</label>
-								<input type="date" placeholder="Please enter your date of birth MM/DD/YYYY" name="Date of Birth" id="bday" required >
+								<input type="date" name="Date of Birth" id="bday" required >
 							</li>
 							<li>
 								<label for="sender">Email address:</label>
@@ -59,8 +59,8 @@
 								<input type="tel" placeholder="Please enter your phone number" name="Phone Number" id="phone" required pattern="[0-9 ()-]+">
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset class="listitem">
+					</fieldset> <!-- end of text input field -->
+					<fieldset class="listitem"> <!-- start of radio input type contact preference field -->
 						<legend>Contact Preference</legend>
 						<ul>
 							<li>
@@ -70,8 +70,8 @@
 								<label><input type="radio" name="Contact Preference" value="phone" required> Phone</label>
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset class="listitem">
+					</fieldset> <!-- end of radio input type contact preference field -->
+					<fieldset class="listitem"> <!-- start of radio input type skill level field -->
 						<legend>Skill level</legend>
 						<ul>
 							<li>
@@ -84,39 +84,39 @@
 								<label><input type="radio" name="Skill Level" value="advanced" required>Advanced</label>
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset>
+					</fieldset> <!-- end of radio input type skill level field -->
+					<fieldset> <!-- start of comments field -->
 						<legend>Comments or Questions</legend>
 						<label>
 							<textarea cols="40" rows="4" name="comments" id="comments">Add your comments or questions here</textarea>
 						</label>
-					</fieldset>
-					<fieldset class="button">
+					</fieldset> <!-- end of comments field -->
+					<fieldset class="button"> <!-- start of buttons field -->
 						<legend class="hidden">Buttons</legend>
 						<input type="reset" name="reset">
 						<input type="submit" value="Submit">
-					</fieldset>
-				</form>
+					</fieldset> <!-- end of buttons field -->
+				</form> <!-- end of form -->
 				<hr>
 				<p>You can also contact us at:
 				<p>
-				<p class="moreContact">enquiries@mosgielhockey.co.nz
+				<p>enquiries@mosgielhockey.co.nz
 				<p>
-				<p class="moreContact">123 Gordon Road</p>
-				<p class="moreContact">Mosgiel</p>
-			</div> <!-- contactsContent -->
-			<footer>
+				<p>123 Gordon Road</p>
+				<p>Mosgiel</p>
+			</div> <!-- end of contactsContent -->
+			<footer> <!-- start of footer which also contains date modified in a script-->
 				<p><a href="#top" class="top">Back to Top</a></p>
 				<p>This website was created for a University project. The content is largely fictional and no services are actually being offered.
 				</p>
-							<script>
+				<script>
 				update = new Date(document.lastModified)
 				theMonth = update.getMonth() + 1
 				theDate = update.getDate()
 				theYear = update.getFullYear()
 				document.writeln("Author: Raeciel Reyes. This page was last modified on: " + theDate + "/" + theMonth + "/" + theYear)
 				</script>
-			</footer>
-		</div> <!-- wrapper -->
+			</footer> <!-- end of footer -->
+		</div> <!-- end of wrapper -->
 	</body>
 </html>

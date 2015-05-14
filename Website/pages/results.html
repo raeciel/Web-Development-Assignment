@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- COMP112 Project Raeciel Reyes 14/05/15 -->
 		<title>Results</title>
 		<meta charset=utf-8>
-		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../style.css"> <!-- links to style.css stylesheet-->
 	</head>
 	<body>
-		<div id="wrapper">
-			<a id="top"></a>
-			<header>
-				<div id="h1">
-					<h1>Mosgiel<br>
-						Underwater Hockey Club</h1>
-				</div>
-			</header>
-			<nav>
+		<div id="wrapper"> <!-- start of wrapper div -->
+			<a id="top"></a> <!-- 'back to top' links to this --> 
+			<header> <!-- start of header -->
+				<h1>Mosgiel<br>
+					Underwater Hockey Club</h1>
+			</header> <!-- end of header -->
+			<nav> <!-- start of navigation -->
 				<ul>
 					<li class="noBorder"><a href="../index.html">Home</a></li>
 					<li class="border"><a href="news.html">News</a></li>
@@ -23,12 +22,12 @@
 					<li class="border"><a>Results</a></li>
 					<li class="noBorder"><a href="contact.html">Contact Us</a></li>
 				</ul>
-			</nav>
-			<div id="content">
+			</nav> <!-- end of navigation -->
+			<div id="content"> <!-- start of content division-->
 				<h2>The South Island League</h2>
 				<p>The year long South Island League is going well. In the last round Dunedin travelled to Invercargill. A good win there for Dunedin against the hapless Invercargill with the sending off of Darren Carson for talking back to the ref giving Invercargill a brief glimmer of hope almost immediately extinguished by two quick goals from Dunedin. Further north Christchurch were far too strong for Nelson and romped home 7 - 1. It was much more finely balanced for us against Timaru and I was seriously worried for a while. But then an inspired individual goal by Sam broke the spirit of Timaru and they never really threatened for the rest of the game.
 				</p>
-				<table id="results">
+				<table id="results"> <!-- start of table for South Island League results -->
 					<caption>Current Club Rankings after round 26</caption>
 					<tr>
 						<th scope="col"><br></th>
@@ -86,21 +85,20 @@
 						<td>1</td>
 						<td>7</td>
 					</tr>
-				</table>
-			</div>
-			<footer>
+				</table> <!-- End of the table -->
+			</div> <!-- end of content div -->
+			<footer> <!-- start of footer which also contains date modified in a script-->
 				<p><a href="#top" class="top">Back to Top</a></p>
 				<p>This website was created for a University project. The content is largely fictional and no services are actually being offered.
 				</p>
-
-							<script>
+				<script>
 				update = new Date(document.lastModified)
 				theMonth = update.getMonth() + 1
 				theDate = update.getDate()
 				theYear = update.getFullYear()
 				document.writeln("Author: Raeciel Reyes. This page was last modified on: " + theDate + "/" + theMonth + "/" + theYear)
 				</script>
-			</footer>
-		</div>
+			</footer> <!-- end of footer -->
+		</div> <!-- end of wrapper -->
 	</body>
 </html>
