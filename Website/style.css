@@ -484,6 +484,13 @@ legend{
 	max-width:430px;
 }
 
+/*set's the size of the google map and centre's it*/
+#map-canvas{
+	margin-left: 260px;
+	width: 500px;
+    height: 400px;
+}
+
 /* modifies the paragraph in followup.html */
 #followUp p{
 	line-height:2px;

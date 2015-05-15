@@ -1,4 +1,4 @@
-/* javascript for theGame.html */
+/* javascript for index.html */
 
 if (document.getElementById){    window.onload = setup;}
 

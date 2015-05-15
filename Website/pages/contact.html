@@ -5,10 +5,12 @@
 		<title>Contact Us</title>
 		<meta charset=utf-8>
 		<link rel="stylesheet" type="text/css" href="../style.css"> <!-- links to style.css stylesheet-->
+		<script src="https://maps.googleapis.com/maps/api/js"></script> <!-- api for google maps -->
+		<script src="map.js"></script> <!-- links to map.js file which shows google maps -->
 	</head>
 	<body>
 		<div id="wrapper"> <!-- start of wrapper div -->
-			<a id="top"></a> <!-- 'back to top' links to this --> 
+			<a id="top"></a> <!-- 'back to top' links to this -->
 			<header> <!-- start of header -->
 				<h1>Mosgiel<br>
 					Underwater Hockey Club</h1>
@@ -25,7 +27,7 @@
 			</nav> <!-- end of navigation -->
 			<div id="contactsContent"> <!-- start of contactsContent div -->
 				<h2>Contact Us</h2>
-				<p>If you wish to join or place an inquiry, please fill up the form below.
+				<p>If you wish to join or place an enquiry, please fill up the form below.
 				<p>
 				<!-- start of the form -->
 				<form method="post" enctype="application/x-www-form-urlencoded" action="http://web112.otago.ac.nz/112bin/112formslab.cgi">
@@ -48,7 +50,7 @@
 							</li>
 							<li>
 								<label for="bday">Date of Birth:</label>
-								<input type="date" name="Date of Birth" id="bday" required >
+								<input type="date" name="Date of Birth" id="bday" required>
 							</li>
 							<li>
 								<label for="sender">Email address:</label>
@@ -104,6 +106,7 @@
 				<p>
 				<p>123 Gordon Road</p>
 				<p>Mosgiel</p>
+				 <div id="map-canvas"></div> <!-- shows Google map using javaScript -->
 			</div> <!-- end of contactsContent -->
 			<footer> <!-- start of footer which also contains date modified in a script-->
 				<p><a href="#top" class="top">Back to Top</a></p>
